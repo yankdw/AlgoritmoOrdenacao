@@ -1,6 +1,3 @@
-/**
- * Interface para algoritmos de ordenação
- */
 public interface OrdenaAlgoritmo {
     /**
      * Ordena o array e retorna as estatísticas

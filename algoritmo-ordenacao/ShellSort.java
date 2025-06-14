@@ -1,6 +1,3 @@
-/**
- * Implementação do Shell Sort - Grupo B
- */
 public class ShellSort implements OrdenaAlgoritmo {
     
     @Override

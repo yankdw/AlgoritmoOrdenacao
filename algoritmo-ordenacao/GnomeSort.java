@@ -1,6 +1,3 @@
-/**
- * Implementação do Gnome Sort - Grupo C
- */
 public class GnomeSort implements OrdenaAlgoritmo {
     
     @Override

@@ -1,6 +1,3 @@
-/**
- * Classe para armazenar o resultado de um teste individual
- */
 public class TesteResultado {
     private final String algorithm;
     private final String group;
@@ -20,8 +17,7 @@ public class TesteResultado {
         this.swaps = swaps;
         this.iterations = iterations;
     }
-    
-    // Getters
+
     public String getAlgorithm() { return algorithm; }
     public String getGroup() { return group; }
     public int getSize() { return size; }

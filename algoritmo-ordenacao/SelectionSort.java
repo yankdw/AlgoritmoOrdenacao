@@ -1,6 +1,3 @@
-/**
- * Implementação do Selection Sort - Grupo A
- */
 public class SelectionSort implements OrdenaAlgoritmo {
     
     @Override

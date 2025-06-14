@@ -1,8 +1,5 @@
 import java.util.Random;
 
-/**
- * Gerador de números aleatórios com seed para reprodutibilidade
- */
 public class GeradorAleatorio {
     
     /**

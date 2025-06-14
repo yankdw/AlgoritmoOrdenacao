@@ -1,6 +1,3 @@
-/**
- * Implementação do Merge Sort - Grupo B
- */
 public class MergeSort implements OrdenaAlgoritmo {
     private int swaps;
     private int iterations;

@@ -3,9 +3,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-/**
- * Classe para exportar resultados para CSV
- */
 public class ExportarResultado {
     
     /**
@@ -18,11 +15,9 @@ public class ExportarResultado {
                                   List<ResultadoMedio> resultadoMedios,
                                   String filename) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
-            // Cabeçalho dos resultados detalhados
             writer.println("=== RESULTADOS DETALHADOS ===");
             writer.println("Algoritmo,Grupo,Tamanho,Rodada,Tempo(ns),Tempo(ms),Trocas,Iteracoes");
-            
-            // Dados detalhados
+
             for (TesteResultado result : detalhesResultado) {
                 writer.printf("%s,%s,%d,%d,%d,%.2f,%d,%d%n",
                     result.getAlgorithm(),
@@ -35,13 +30,11 @@ public class ExportarResultado {
                     result.getIterations()
                 );
             }
-            
-            // Separador
+
             writer.println();
             writer.println("=== RESULTADOS MEDIOS ===");
             writer.println("Algoritmo,Grupo,Tamanho,Tempo_Medio(ns),Tempo_Medio(ms),Trocas_Medias,Iteracoes_Medias");
-            
-            // Dados médios
+
             for (ResultadoMedio result : resultadoMedios) {
                 writer.printf("%s,%s,%d,%.0f,%.2f,%.0f,%.0f%n",
                     result.getAlgorithm(),
@@ -91,8 +84,7 @@ public class ExportarResultado {
                 }
                 writer.println();
             }
-            
-            // Tabela de Trocas
+
             writer.println();
             writer.println("=== NUMERO DE TROCAS ===");
             writer.print("Tamanho,");
@@ -113,8 +105,7 @@ public class ExportarResultado {
                 }
                 writer.println();
             }
-            
-            // Tabela de Iterações
+
             writer.println();
             writer.println("=== NUMERO DE ITERACOES ===");
             writer.print("Tamanho,");

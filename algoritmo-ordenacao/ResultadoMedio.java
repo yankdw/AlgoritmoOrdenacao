@@ -1,6 +1,3 @@
-/**
- * Classe para armazenar os resultados médios
- */
 public class ResultadoMedio {
     private final String algorithm;
     private final String group;
@@ -18,8 +15,7 @@ public class ResultadoMedio {
         this.avgSwaps = avgSwaps;
         this.avgIterations = avgIterations;
     }
-    
-    // Getters
+
     public String getAlgorithm() { return algorithm; }
     public String getGroup() { return group; }
     public int getSize() { return size; }

@@ -1,6 +1,3 @@
-/**
- * Classe para armazenar o resultado de uma ordenação
- */
 public class SortResultado {
     private final int swaps;
     private final int iterations;
